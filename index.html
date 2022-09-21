@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <link rel="icon" href="./images/cifrao_image.jpg" type="image/png">
+        <title>Convesor de Moedas</title>
+    </head>
+
+<body>
+
+    <header>
+
+        <h1>CONVERSOR DE MOEDAS</h1>
+        <p><span class="span">Com base nos dados informados nessa aplicação, o usuário poderá obter a cotação em tempo real das principais moedas do mundo.</span></p>
+
+    </header>
+
+    <div class="container">
+
+        <section>
+    
+        <div class="painel">
+    
+            <form id="formulario">
+    
+                <input class="valor" name="valor" type="number" placeholder="Valor em Real R$" required> <br>
+
+                <img id="bandeiraEUA" src="./images/bandeira_eua.png">
+                Dólar   
+                <input type="radio" name="moedaEstrangeira" value="Dólar" class="dolar" required> <br>
+
+
+                <img id="bandeiraUniaoEuropeia" src="./images/ue_bandeira.jpg">
+                Euro
+                <input type="radio" name="moedaEstrangeira" value="Euro" class="euro" required><br>
+
+
+                <img id="bandeiraReinoUnido" src="./images/bandeira_reino_unido.png">
+                Libra
+                <input type="radio" name="moedaEstrangeira" value="Libra" class="libra" required><br>
+
+
+                <img id="bandeiraBitcoin" src="./images/bitcoin_image.webp">
+                Bitcoin
+                <input type="radio" name="moedaEstrangeira" value="Bitcoin" class="bitcoin" required><br>
+
+
+                <img id="bandeiraAngola" src="./images/angola_bandeira.png">
+                Kwanza
+                <input type="radio" name="moedaEstrangeira" value="Kwanza" class="kwanza" required><br><br>
+                
+                <input class="button" type="reset" name="converter" value="CONVERTER" onclick="calcularCotacao()">
+    
+            </form>
+    
+            <div id="verificarCotacao"></div>
+    
+        </div>
+    
+    </section>
+    
+    </div>
+
+
+
+    
+    <footer>
+
+        <p>CONVERSOR DE MOEDAS</p>
+        <p><span class="span">Para maiores informações - clique no link abaixo para visualizar minhas redes sociais:</span></p>
+        
+        <div class="social">
+            <a href="https://www.facebook.com/JadsonSouzaSCR"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/jadson.souzza/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jadson-souza-a6a130224/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    
+        <p class="fim">© 2022 Copyright by Jadson Souza.</p>
+    
+    </footer>
+
+<script src="./script/app.js"></script>
+
+</body>
+
+</html>
